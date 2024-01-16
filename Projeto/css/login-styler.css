@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin&family=Raleway&family=Roboto+Mono:wght@400;600&display=swap");
+
+body{
+  background-image: url('../img/background.jpg') !important;
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+}
+
+body {
+  font-family: Libre Franklin, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.modal-sheet .modal-dialog {
+  width: 380px;
+  transition: bottom .75s ease-in-out;
+}
+.modal-sheet .modal-footer {
+  padding-bottom: 2rem;
+}
+.small-image {
+  padding: 10px;
+  max-width: 400px;
+  width: 100%;
+}
+
+ .modal-body {
+  background-color: rgb(0, 14, 76);
+}
+.rodape {
+  margin-top: 50%;
+}
+
+

@@ -1,0 +1,9 @@
+.container .btn .btn-primary {
+    margin-right:10px;
+}
+.btn-edit, .btn-save, .btn-cancel, .btn-delete {
+    font-size: 14px;
+    padding: 8px 12px;
+    /* Adicione outras propriedades de estilo conforme necessário */
+ }
+ 

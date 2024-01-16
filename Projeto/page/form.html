@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" sizes="16x16" href="../img/favicon.ico" />
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/form-styler.css" />
+    <title>Formulario vestibular</title>
+</head>
+<body>
+    
+    <div class="sidebar">
+        <div class="frase-content">
+            <p class="frase1-aside">Escolha</p>
+            <p class="frase1-aside">Faça a</p>
+            <p class="frase-destaque-aside">Diferença</p>
+        </div>
+        <img class="student" src="../img/student.png" alt="student-img" />
+    </div>
+
+    
+    <body>
+        <div class="sidebar">
+          <div class="frase-content">
+            <p class="frase1-aside">Escolha</p>
+            <p class="frase1-aside">Faça a</p>
+            <p class="frase-destaque-aside">Diferença</p>
+          </div>
+            <img class="student" src="../img/student.png" alt="student-img" />
+         
+        </div>
+    
+        <div class="container">
+          <div class="center-screen">
+            <form id="meuForm" action="#" method="get" class="form">
+              
+                <img src="../img/logo-ficr.png" alt="Logo" class="small-image mb-4" />
+    
+              <input type="text" class="form-control" id="nome-completo" name="nome" placeholder="Nome completo" />
+              <input type="email" class="form-control" id="email" name="email" placeholder="E-mail" />
+    
+              <div class="row">
+                <input type="tel" class="form-control col-sm-2" id="ddd" name="ddd" placeholder="DDD" maxlength="2" />
+                <input type="tel" class="form-control col-sm-4" id="telefone" name="telefone" placeholder="Telefone" />
+                <input type="date" class="form-control col-sm-5" id="data" name="data" placeholder="dd/mm/aaaa" />
+              </div>
+    
+              <input type="text" class="form-control" id="cidade" name="cidade" placeholder="Cidade" />
+              <input type="text" class="form-control" id="bairro" name="bairro" placeholder="Bairro" />
+    
+              <select id="cursos" class="form-control" name="curso">
+                <option value="">Escolha o Curso</option>
+                <option value="adm">Administração</option>
+                <option value="ads">Análises e Desenvolvimento de Sistemas</option>
+                <option value="direito">Direito</option>
+                <option value="gtQualidade">Gestão da Qualidade</option>
+                <option value="gtRH">Gestão de RH</option>
+                <option value="gtFin">Gestão Financeira</option>
+                <option value="gtPub">Gestão Pública</option>
+                <option value="procGerenciais">Processos Gerenciais</option>
+                <option value="enfermagem">Enfermagem</option>
+                <option value="psicologia">Psicologia</option>
+                <option value="si">Sistemas para Internet</option>
+              </select>
+    
+              <select name="ingresso" id="ingresso" class="form-control">
+                <option value="">Forma de ingresso?</option>
+                <option value="Enem">ENEM</option>
+                <option value="Vestibular Digital">Vestibular Digital</option>
+                <option value="Segunda Grad">Segunda Graduação</option>
+                <option value="Transferencia">Transferência Externa</option>
+              </select>
+    
+              <select id="semestre" class="form-control" name="semestre">
+                <option value="">Escolha o semestre</option>
+                <option value="2024.1">2024.1</option>
+                <option value="2024.2">2024.2</option>
+              </select>
+    
+              <div class="btn-group">
+                <select name="conheceu" id="conheceu" class="form-control">
+                  <option value="">Como nos Conheceu?</option>
+                  <option value="Empresa">Ação empresa</option>
+                  <option value="rua">Ação rua</option>
+                  <option value="parque">Ação parque</option>
+                  <option value="evento">Evento</option>
+                  <option value="escola">Escola</option>
+                </select>
+              </div>
+    
+              <label for="observacoes" class="form-control bg-transparent mb-2">Escreva suas observações</label>
+              <textarea class="form-control mb-2" name="observacoes" id="observacoes" cols="30" rows="10" placeholder="Melhor forma de contato, horário e outros"></textarea>
+              
+              <div class="custom-control custom-checkbox mb-2">
+                <input type="checkbox" class="custom-control-input" id="customCheck1" name="aceitar-termos" />
+                <label class="custom-control-label" for="customCheck1">Aceitar o <a href="https://drive.google.com/file/d/1ChqB78_eeLycwKUfjgrXam33P7HVbQrk/view?usp=sharing" target="_blank">termo</a></label>
+              </div>
+    
+    
+              <br />
+              <button class="btn btn-secondary" type="button" onclick="apagarFormulario()">Apagar</button>
+              <button type="submit" class="btn btn-primary">Concluir</button>
+            </form>
+    
+            <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+            <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+            <script src="../banco/firebase-config.js"></script>
+            <script src="../banco/form.js"></script>
+          </div>
+        </div>
+
+        <div vw class="enabled">
+          <div vw-access-button class="active"></div>
+          <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+          </div>
+        </div>
+        <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+        <script>
+          new window.VLibras.Widget({
+              rootPah: '/app',
+              personalization: 'https://vlibras.gov.br/config/default_logo.json',
+              opacity: 0.5,
+              position: 'R',
+              avatar: 'hosana',
+          });
+        </script>
+      </body>
+    </html>

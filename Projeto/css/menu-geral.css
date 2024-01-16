@@ -1,0 +1,92 @@
+body{
+  background-image: url('../img/background.jpg') !important;
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+}
+
+.custom-navbar {
+    background-color: #aad0f7 !important; 
+  }
+  
+  .custom-navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0; 
+  }
+  
+  .navbar-nav .nav-item .active i,b {
+    color: #000000 !important;
+  }
+  .navbar-nav .nav-item .nav-link{
+    color: white;
+  }
+  .navbar-nav .nav-item .nav-link i{
+    margin-right: 4px;
+    color: white;
+  }
+
+
+
+  .logo {
+    margin-right: 30px;
+    max-width: 250px;
+    height: auto;
+  }
+
+
+  .navbar-brand {
+    margin-right: 20px; 
+  }
+  
+  .navbar-nav {
+    display: flex;
+    list-style: none;
+    padding: 0;
+  }
+  
+  .nav-item {
+    margin-right: 15px;
+  }
+  
+  .btn {
+    padding: 8px 16px;
+  }
+
+
+.container .table .table-responsive{
+  width: 100%;
+}
+
+.container .table .btn-edit, .btn-save{
+  border: none;
+  border-radius: 10px;
+  padding-right: 12px;
+  padding-left: 12px;
+  color: white;
+  background-color: rgb(0, 81, 255);
+  outline: none;
+  
+}
+.container .table
+.btn-cancel, .btn-delete{
+  border: none;
+  border-radius: 10px;
+  padding-right: 12px;
+  padding-left: 12px;
+  color: white;
+  background-color: rgb(255, 0, 0);
+  outline: none;
+  
+}
+
+ .rodape {
+  margin-top: 50%;
+}
+.btn-edit, .btn-save, .btn-cancel, .btn-delete {
+  font-size: 14px;
+  padding: 8px 12px;
+  /* Adicione outras propriedades de estilo conforme necessário */
+}
+

@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin&family=Raleway&family=Roboto+Mono:wght@400;600&display=swap");
+
+body {
+  background: rgba(217, 217, 217, 1);
+  font-family: Libre Franklin, sans-serif;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 20%;
+  /* Largura da barra azul - ajuste conforme necessário */
+  background-color: blue;
+  /* Cor da barra azul */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding: 2%;
+}
+
+.row {
+  padding: 0 16px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.student {
+  width: 80%;
+}
+
+.frase-content {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  color: #ffffff;
+  font-size: 1.2rem;
+  line-height: 0.2em;
+}
+
+.frase-destaque-aside {
+  color: #55ffbe;
+  font-weight: 900;
+  letter-spacing: normal;
+}
+
+.center-screen {
+  max-width: 500px;
+  /* Ajuste o máximo conforme necessário */
+  width: 100%;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.small-image {
+  max-width: 100%;
+  /* Tamanho máximo da imagem */
+  height: auto;
+  margin-bottom: 20px;
+}
+
+form label,
+form input[type="text"],
+form input[type="email"],
+form select {
+  width: 100%;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.btn-group {
+  display: block;
+
+  width: 100%;
+}
+.btn-secondary {
+  background-color: red;
+  margin-bottom:10px ;
+  display: block;
+  width: 20%;
+}
+
+.custom-control .custom-control-input input {
+    margin-top: 20px;
+}
+
+footer {
+  padding: 20px;
+  background: #55ffbe;
+}
+
+@media (max-width: 800px) {
+  .sidebar {
+    display: none;
+  }
+
+  .row {
+    gap: 10px;
+  }
+}
